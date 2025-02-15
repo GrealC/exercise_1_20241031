@@ -139,7 +139,7 @@ def predict(params, X):
     W1, b1 = params['W1'], params['b1']
     W2, b2 = params['W2'], params['b2']
 
-    y_pred = np.zeros(X.shape[1])
+    y_pred = np.zeros(X.shape[1]) # 1?0?
    
     relu = lambda x: x * (x > 0)
     z1 = np.dot(X,W1)+b1
